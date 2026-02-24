@@ -1,5 +1,4 @@
-let interviewCountArr = [];
-let rejectedCountArr = [];
+
 
 let totalCount = document.getElementById('total-count');
 let interviewCount = document.getElementById('interview-count');
@@ -7,6 +6,8 @@ let rejectionCount = document.getElementById('rejection-count');
 let availableJobsCount = document.getElementById('total-job');
 const allCards = document.getElementById('all-cards');
 
+let interviewCountArr = [];
+let rejectedCountArr = [];
 function allCardsCalculate() {
     totalCount.innerText = allCards.children.length;
     availableJobsCount.innerText = allCards.children.length;
