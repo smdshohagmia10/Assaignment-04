@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5"rel="stylesheet"type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="w-[80%] mx-auto">
     <!-- header section  -->
@@ -30,9 +36,244 @@
       </div>
     </header>
     <!-- main section  -->
-    
+    <main>
+      <!-- select option  -->
+      <div class="my-2">
+        <div class="flex justify-between p-2">
+          <h2 class="font-semibold text-lg">Available Jobs</h2>
+          <p><span id="total-job">0</span> jobs</p>
+        </div>
+        <button onclick="ToggleStyle('all-btn')" id="all-btn" class="btn btn-primary btn-soft">
+          <span>All</span>
+        </button>
+        <button onclick="ToggleStyle('interview-btn')" id="interview-btn" class="btn btn-primary btn-soft">
+          <span>Interview</span>
+        </button>
+        <button onclick="ToggleStyle('rejected-btn')" id="rejected-btn" class="btn btn-primary btn-soft">
+          <span>Rejected</span>
+        </button>
+      </div>
 
+      <!-- jobs section  -->
+      <section id="all-cards" class="space-y-6">
+        <!-- card-1  -->
+        <div class="card shadow-sm p-2 space-y-2">
+          <div class="flex justify-between">
+            <div>
+              <h2 class="text-lg font-bold">Mobile First Corp</h2>
+              <p>React Native Developer</p>
+            </div>
+            <div>
+              <button class="btn rounded-full">
+                <i class="trash-been fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+          <p>Remote • Full-time • $130,000 - $175,000</p>
+          <br />
+          <div class="notified bg-gray-300 w-fit p-2 rounded-sm">
+            <p class="font-semibold">Not Applied</p>
+          </div>
+          <br />
+          <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+          <div>
+            <button class="btn btn-success btn-soft">INTERVIEW</button>
+            <button class="btn btn-error btn-soft">REJECTED</button>
+          </div>
+        </div>
+        <!-- card-2  -->
+        <div class="card shadow-sm p-2 space-y-2">
+          <div class="flex justify-between">
+            <div>
+              <h2 class="text-lg font-bold">NextGen Solutions</h2>
+              <p>Frontend Developer</p>
+            </div>
+            <div>
+              <button class="btn rounded-full">
+                <i class="trash-been fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+          <p>Onsite • Full-time • $90,000 - $120,000</p>
+          <br />
+          <div class="notified bg-gray-300 w-fit p-2 rounded-sm">
+            <p class="font-semibold">Not Applied</p>
+          </div>
+          <br />
+          <p>Develop responsive web applications using React and Tailwind CSS. Optimize UI performance and maintain clean, reusable components..</p>
+          <div>
+            <button class="btn btn-success btn-soft">INTERVIEW</button>
+            <button class="btn btn-error btn-soft">REJECTED</button>
+          </div>
+        </div>
+        <!-- card-3  -->
+        <div class="card shadow-sm p-2 space-y-2">
+          <div class="flex justify-between">
+            <div>
+              <h2 class="text-lg font-bold">CloudSync Labs</h2>
+              <p>Backend Developer</p>
+            </div>
+            <div>
+              <button class="btn rounded-full">
+                <i class="trash-been fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+          <p>Remote • Full-time • $110,000 - $150,000</p>
+          <br />
+          <div class="notified bg-gray-300 w-fit p-2 rounded-sm">
+            <p class="font-semibold">Not Applied</p>
+          </div>
+          <br />
+          <p>Design REST APIs using Node.js and Express. Manage databases and ensure secure authentication and scalable architecture.</p>
+          <div>
+            <button class="btn btn-success btn-soft">INTERVIEW</button>
+            <button class="btn btn-error btn-soft">REJECTED</button>
+          </div>
+        </div>
+        <!-- card-4  -->
+        <div class="card shadow-sm p-2 space-y-2">
+          <div class="flex justify-between">
+            <div>
+              <h2 class="text-lg font-bold">CodeCrafters Inc</h2>
+              <p>Full Stack Developer</p>
+            </div>
+            <div>
+              <button class="btn rounded-full">
+                <i class="trash-been fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+          <p>Hybrid • Full-time • $100,000 - $140,000</p>
+          <br />
+          <div class="notified bg-gray-300 w-fit p-2 rounded-sm">
+            <p class="font-semibold">Not Applied</p>
+          </div>
+          <br />
+          <p>Work on both frontend and backend systems using MERN stack. Implement new features and improve existing system performance</p>
+          <div>
+            <button class="btn btn-success btn-soft">INTERVIEW</button>
+            <button class="btn btn-error btn-soft">REJECTED</button>
+          </div>
+        </div>
+        <!-- card-5  -->
+        <div class="card shadow-sm p-2 space-y-2">
+          <div class="flex justify-between">
+            <div>
+              <h2 class="text-lg font-bold">DataBridge Tech</h2>
+              <p>Junior Software Engineer</p>
+            </div>
+            <div>
+              <button class="btn rounded-full">
+                <i class="trash-been fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+          <p>Onsite • Part-time • $60,000 - $80,000</p>
+          <br />
+          <div class="notified bg-gray-300 w-fit p-2 rounded-sm">
+            <p class="font-semibold">Not Applied</p>
+          </div>
+          <br />
+          <p>Assist in building internal tools and fixing bugs. Write clean, maintainable code under senior developer guidance.</p>
+          <div>
+            <button class="btn btn-success btn-soft">INTERVIEW</button>
+            <button class="btn btn-error btn-soft">REJECTED</button>
+          </div>
+        </div>
+        <!-- card-6  -->
+        <div class="card shadow-sm p-2 space-y-2">
+          <div class="flex justify-between">
+            <div>
+              <h2 class="text-lg font-bold">DevWave Systems</h2>
+              <p>JavaScript Developer</p>
+            </div>
+            <div>
+              <button class="btn rounded-full">
+                <i class="trash-been fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+          <p>Remote • Contract • $85,000 - $110,000</p>
+          <br />
+          <div class="notified bg-gray-300 w-fit p-2 rounded-sm">
+            <p class="font-semibold">Not Applied</p>
+          </div>
+          <br />
+          <p>Develop dynamic web applications using modern JavaScript frameworks. Ensure cross-browser compatibility and performance optimization.</p>
+          <div>
+            <button class="btn btn-success btn-soft">INTERVIEW</button>
+            <button class="btn btn-error btn-soft">REJECTED</button>
+          </div>
+        </div>
+        <!-- card-7  -->
+        <div class="card shadow-sm p-2 space-y-2">
+          <div class="flex justify-between">
+            <div>
+              <h2 class="text-lg font-bold">PixelSoft Studio</h2>
+              <p>UI Developer</p>
+            </div>
+            <div>
+              <button class="btn rounded-full">
+                <i class="trash-been fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+          <p>Hybrid • Full-time • $75,000 - $105,000</p>
+          <br />
+          <div class="notified bg-gray-300 w-fit p-2 rounded-sm">
+            <p class="font-semibold">Not Applied</p>
+          </div>
+          <br />
+          <p>Transform design mockups into pixel-perfect user interfaces using HTML, CSS, and Tailwind. Focus on accessibility and responsiveness.</p>
+          <div>
+            <button class="btn btn-success btn-soft">INTERVIEW</button>
+            <button class="btn btn-error btn-soft">REJECTED</button>
+          </div>
+        </div>
+        <!-- card-8  -->
+        <div class="card shadow-sm mb-10 space-y-2">
+          <div class="flex justify-between">
+            <div>
+              <h2 class="text-lg font-bold">TechNova Global</h2>
+              <p>Software Engineer</p>
+            </div>
+            <div>
+              <button class="btn rounded-full">
+                <i class="trash-been fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+          <p>Remote • Full-time • $120,000 - $160,000</p>
+          <br />
+          <div class="notified bg-gray-300 w-fit p-2 rounded-sm">
+            <p class="font-semibold">Not Applied</p>
+          </div>
+          <br />
+          <p>
+            Design scalable cloud-based applications. Collaborate with cross-functional teams and participate in code reviews and system design
+            discussions.
+          </p>
+          <div>
+            <button class="btn btn-success btn-soft">INTERVIEW</button>
+            <button class="btn btn-error btn-soft">REJECTED</button>
+          </div>
+        </div>
+      </section>
 
+      <section>
+        <div id="empty" class="flex flex-col items-center justify-center p-10 relative hidden">
+          <div class="flex justify-center items-center">
+            <img src="./Img/Vector (2).png" alt="" class="w-32" />
+            <img src="./Img/Group.png" alt="" class="absolute w-15" />
+          </div>
 
+          <h3 class="text-xl font-bold">No jobs available</h3>
+          <p class="text-gray-500">Check back soon for new job opportunities</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./job-traker.js"></script>
   </body>
 </html>
