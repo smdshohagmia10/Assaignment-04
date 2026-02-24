@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5"rel="stylesheet"type="text/css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="w-[80%] mx-auto">
+    <!-- header section  -->
+    <header class="border-b border-base-300 my-6 py-3">
+      <h1 class="text-3xl font-bold py-2">Job Application Tracker</h1>
+      <div class="grid grid-cols-3 py-2 w-full gap-4">
+        <div class="shadow-sm p-2">
+          <p>Total</p>
+          <span id="total-count" class="text-2xl font-bold">0</span>
+        </div>
+        <div class="shadow-sm p-2">
+          <p>Interview</p>
+          <span id="interview-count" class="text-2xl font-bold text-success">0</span>
+        </div>
+
+        <div class="shadow-sm p-2">
+          <p>Rejected</p>
+          <span id="rejection-count" class="text-2xl font-bold text-red-600">0</span>
+        </div>
+      </div>
+    </header>
+    <!-- main section  -->
+    
+
+
+
+    <script src="./job-traker.js"></script>
+  </body>
+</html>
